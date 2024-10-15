@@ -1,0 +1,6 @@
+serviço de redes(1, 2, 3) 
+print de tela do cisco(servidor, dhcp, dns)
+switch, servidor, computador, notebook, cabo de rede e grimpagem.
+4, 5, 6 e 8. Banco de Dados, fluxogramas
+7. componentes eletrônicos(mostra STEAM incluido): Arduino, potenciometro e sensor de temp.
+9, 10. Java Script e ordenação
