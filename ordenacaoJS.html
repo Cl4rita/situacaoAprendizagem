@@ -7,161 +7,254 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="shortcut icon" href="icone.png" type="image/png">
     <script src="menu.js" defer></script>
-    <script src="ex1.js" defer></script>
-    <script src="quest1.js" defer></script>
+    <script src="ordenacao.js" defer></script>
     <title>Site WEB</title>
 </head>
 <body>
-        <nav class="menuLat">
-            <div class="btnExpandir">
-                <i class="bi bi-list" id="btnExpand"></i>
-            </div>
-            <ul>
-                <li class="itemMenu">
-                    <a href="index.html">
-                        <p class="txtPag">Home</p>
-                    </a>
-                </li>
-                <li class="itemMenu">
-                    <a href="redes.html">
-                        <p class="txtPag">Redes</p>
-                    </a>
-                </li>
-                <li class="itemMenu">
-                    <a href="bancoDados.html">
-                        <p class="txtPag">Banco de Dados</p>
-                    </a>
-                </li>
-                <li class="itemMenu">
-                    <a href="ordenacaoJS.html">
-                        <p class="txtPag">Eletroeletrônica</p>
-                    </a>
-                </li>
-                <li class="itemMenu">
-                    <a href="ordenacaoJS.html">
-                        <p class="txtPag">Java Script</p>
-                    </a>
-                </li>
-                <li class="itemMenu" id="itemMenu-git">
-                    <a href="https://github.com/Cl4rita">
-                        <div class="btnIcones">
-                            <i class="bi bi-github" id="btnIcone"></i>
-                            <p id="txtPag2">GitHub</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="itemMenu" id="itemMenu-vercel">
-                    <a href="https://vercel.com/claras-projects-00e0f782">
-                        <div class="btnIcones">
-                            <i class="bi bi-caret-up-square-fill" id="btnIcone"></i>
-                            <p id="txtPag3">Vercel</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="itemMenu" id="itemMenu-portfolio">
-                    <a href="https://sites.google.com/estudante.sesisenai.org.br/anaclarafurtado/in%C3%ADcio">
-                        <div class="btnIcones">
-                            <i class="bi bi-file-earmark-post-fill" id="btnIcone"></i>
-                            <p id="txtPag4">Portfólio</p>
-                        </div>
-                    </a>
-                </li>
+    <nav class="menuLat">
+        <div class="btnExpandir">
+            <i class="bi bi-list" id="btnExpand"></i>
+        </div>
+        <ul>
+            <li class="itemMenu">
+                <a href="index.html">
+                    <p class="txtPag">Home</p>
+                </a>
+            </li>
+            <li class="itemMenu">
+                <a href="redes.html">
+                    <p class="txtPag">Redes</p>
+                </a>
+            </li>
+            <li class="itemMenu">
+                <a href="bancoDados.html">
+                    <p class="txtPag">Banco de Dados</p>
+                </a>
+            </li>
+            <li class="itemMenu">
+                <a href="ordenacaoJS.html">
+                    <p class="txtPag">Eletroeletrônica</p>
+                </a>
+            </li>
+            <li class="itemMenu">
+                <a href="algoritmos_fluxo.html">
+                    <p class="txtPag">Algoritmos</p>
+                </a>
+            </li>
+            <li class="itemMenu">
+                <a href="ordenacaoJS.html">
+                    <p class="txtPag">Java Script</p>
+                </a>
+            </li>
+            <li class="itemMenu" id="itemMenu-git">
+                <a href="https://github.com/Cl4rita">
+                    <div class="btnIcones">
+                        <i class="bi bi-github" id="btnIcone"></i>
+                        <p id="txtPag2">GitHub</p>
+                    </div>
+                </a>
+            </li>
+            <li class="itemMenu" id="itemMenu-vercel">
+                <a href="https://vercel.com/claras-projects-00e0f782">
+                    <div class="btnIcones">
+                        <i class="bi bi-caret-up-square-fill" id="btnIcone"></i>
+                        <p id="txtPag3">Vercel</p>
+                    </div>
+                </a>
+            </li>
+            <li class="itemMenu" id="itemMenu-portfolio">
+                <a href="https://sites.google.com/estudante.sesisenai.org.br/anaclarafurtado/in%C3%ADcio">
+                    <div class="btnIcones">
+                        <i class="bi bi-file-earmark-post-fill" id="btnIcone"></i>
+                        <p id="txtPag4">Portfólio</p>
+                    </div>
+                </a>
+            </li>
             </ul>
         </nav>
         <br>
     <main>
         <br>
         <div class="caixa2">
-        <h1>Bubble Sort</h1>
+        <h1>Métodos de Ordenação</h1>
+        </div>
+        <br><br>
+        <div class="caixa">
+        <h2>Bubble Sort</h2>
         <br>
         <p>É um dos algoritmos de ordenação mais simples, mas também um dos menos eficientes para grandes conjuntos de dados. Ele funciona comparando elementos adjacentes em uma lista e trocando-os de lugar se estiverem na ordem errada.</p>
         <br>
-        <p>Exemplo:6 5 10 1 8 4</p>
+        <p>Exemplo: [6, 5, 10, 1, 8, 4]</p>
         <br>
-        <p>O método vai comparar os números e mudar o lugar deles conforme a ordem. Se for crescente por exemplo, 10 e 1 vão trocar de lugar, o 1 vai sair do índice 3 e ir para o 2 até chegar no índice 0.</p>
+        <p>O método vai comparar os números e mudar o lugar deles conforme a ordem. Se for crescente por exemplo, 10 e 1 vão trocar de lugar, o 1 vai sair do índice 3 e ir para o 2 até chegar no índice 0. É um método que compara entre dois elementos e anda um índice por troca e apenas troca um elemento por vez (ele só troca quando o elemento, por exemplo o 1 chegar no ugar certo, assim ele irá organizar outro elemento).</p>
         <br>
-        <div class="imagem_centralizer">
-        <img src="bubbleSORT_ex.webp" alt= "">
+        <div class="imagem">
+        <img src="bubbleSORT.webp" alt= "">
         </div>
         </div>
-        <br><br><br>
+        <br><br>
         <div class="caixa">
-        <h2>Exercício 1</h2>
+        <h2>Exercício Bubble</h2>
         <br>
-        <p>Gerar um array aleatório com tamanho igual a 10 elementos com intervalo de 1 a 20. Usando o algoritmo Bubble Sort, ordenar o array em ordem crescente ou decrescente.</p>
-        <br>
+        <div class="paragrafo">
+        <p>O programa deve gerar uma
+            quantidade de números, ordenar os números em ordem
+            crescente no array e depois colocar os números em ordem
+            decrescente no array e exibir o resultado na tela, com o uso de
+            HTML, CSS e Javascript. Requisitos: os números aleatórios
+            devem começar a partir do 1 (um) enquanto o maior valor do
+            intervalo dos números aleatórios é igual a quantidade de
+            números gerados. Exemplo: Se o número digitado for 5, o
+            intervalo de geração de números aleatórios é de 1 à 5, com 5
+            números no array. O programa deve ter 3 botões, sendo o
+            primeiro para gerar o número aleatório, o segundo para ordenar
+            e o terceiro para colocar os números em ordem inversa. Os
+            resultados do array original, array em ordem crescente e em
+            ordem decrescente.</p>
+        </div>
+            <br>
         <div class="botao">
-        <button onclick="chamar()">Chamar</button>
-    </div>
+        <label for="numBub">Digite um valor para gerar o array:</label><br><br>
+        <input type="number" id="numBub" placeholder="Número"><br><br>
+        <button id="gerarBub">Gerar Bubble</button><br><br>
+        <button id="ordenarCreBub">Ordenar 𝖢rescente</button><br><br>
+        <button id="ordenarDecreBub">Ordenar 𝖣ecrescente</button><br><br>
+        <div id="resBub"></div>
     <br>
-        <div id="resposta"></div>
-        <br>
-        <hr>
-        <br>
-        <h2>Exercício 2</h2>
-        <br>
-        <p>Gerar um array com valores fixos: [5,3,1,4,2]. Usando o algoritmo Bubble Sort, ordenar o array em ordem crescente ou decrescente.</p>
-        <br>
-        <div class="botao">
-        <button onclick="chamar2()">Chamar2</button>
-    </div>
-        <br>
-        <div id="resposta2"></div>
-        <br>
-        <hr>
-    </div>
-    <br><br><br>
-    <div class="caixa2">
-    <h1>While</h1>
-    <br>
-    <p>É uma estrutura de controle que permite executar um bloco de código repetidamente enquanto uma determinada condição for verdadeira. É uma ferramenta poderosa para automatizar tarefas e iterar sobre conjuntos de dados.</p>
-    <br>
-    <div class="imagem_centralizer">
-    <img src="while.png" alt= "">
+    <hr>
     </div>
     </div>
-    <br><br><br>
+    <br><br>
     <div class="caixa">
+    <h2>Insertion Sort</h2>
+    <br>
+    <p>O Insertion Sort é um algoritmo de ordenação incremental que constrói a lista ordenada um elemento de cada vez. Ele funciona comparando o elemento atual com os elementos anteriores e inserindo-o na posição correta.</p>
+    <br>
+    <p>Exemplo: [6, 5, 3, 1, 8, 7]</p>
+    <br>
+    <p>Parecido com o Bubble Sort, entretanto é mais eficiente que o Bubble, porque apesar de ele comparar entre dois elementos, ele analiza mais como um todo, por exemplo o elemento 5, ele vai ver que 5 < 6 e vai mover o 5 para o começo, depois irá ver que o 3 < 5,6 e vai mover o 3 para frente do 5.</p>
+    <br>
+    <div class="imagem">
+    <img src="Insertion_sort.png" alt= "">
+    </div>
+    </div>
+    <br><br>
+        <div class="caixa">
+        <h2>Exercício Insertion</h2>
         <br>
-        <h2>Exercício 1</h2>
+        <div class="paragrafo">
+        <p>O programa deve gerar uma
+            quantidade de números, ordenar os números em ordem
+            crescente no array e depois colocar os números em ordem
+            decrescente no array e exibir o resultado na tela, com o uso de
+            HTML, CSS e Javascript. Requisitos: os números aleatórios
+            devem começar a partir do 1 (um) enquanto o maior valor do
+            intervalo dos números aleatórios é igual a quantidade de
+            números gerados. Exemplo: Se o número digitado for 5, o
+            intervalo de geração de números aleatórios é de 1 à 5, com 5
+            números no array. O programa deve ter 3 botões, sendo o
+            primeiro para gerar o número aleatório, o segundo para ordenar
+            e o terceiro para colocar os números em ordem inversa. Os
+            resultados do array original, array em ordem crescente e em
+            ordem decrescente.</p>
+        </div>
+        <div class="botao">
         <br>
-        <p>Crie um programa que calcule a média de 5 números armazenados em um array, utilizando um laço do...while, considerando o seguinte array: [15, 25, 35, 45, 55].</p>
+        <label for="numIns">Digite um valor para gerar o array:</label><br><br>
+        <input type="number" id="numIns" placeholder="Número"><br><br>
+        <button id="gerarIns">Gerar Insertion</button><br><br>
+        <button id="ordenarCreIns">Ordenar Crescent𝚎</button><br><br>
+        <button id="ordenarDecreIns">Ordenar Decrescent𝚎</button><br><br>
+        <div id="resIns"></div>
+    <br>
+    <hr>
+    </div>
+    </div>
+    <br><br>
+    <div class="caixa">
+    <h2>Selection Sort</h2>
+    <br>
+    <p>O Selection Sort é um algoritmo de ordenação simples que funciona encontrando o menor elemento em uma lista não ordenada e o colocando na sua posição correta. Ele repete esse processo até que toda a lista esteja ordenada.</p>
+    <br>
+    <p>Exemplo: [9, 2, 5, 6, 4, 3]</p>
+    <br>
+    <p>É o método mais eficiente dentre os três citados, poi ele compara o array como um todo. Por exemplo, ele vai com parar o elemento 2 com 9 e trocar eles, depois vai trocar o 9 com o 3. E por fim vai trocar o 4 com o 5 que vai trocar com o 6.</p>
+    <br>
+    <div class="imagem">
+    <img src="selection-sort.webp" alt= "">
+    </div>
+    </div>
+        <br><br>
+        <div class="caixa">
+        <h2>Exercício Selection</h2>
+        <br>
+        <div class="paragrafo">
+        <p>O programa deve gerar uma
+            quantidade de números, ordenar os números em ordem
+            crescente no array e depois colocar os números em ordem
+            decrescente no array e exibir o resultado na tela, com o uso de
+            HTML, CSS e Javascript. Requisitos: os números aleatórios
+            devem começar a partir do 1 (um) enquanto o maior valor do
+            intervalo dos números aleatórios é igual a quantidade de
+            números gerados. Exemplo: Se o número digitado for 5, o
+            intervalo de geração de números aleatórios é de 1 à 5, com 5
+            números no array. O programa deve ter 3 botões, sendo o
+            primeiro para gerar o número aleatório, o segundo para ordenar
+            e o terceiro para colocar os números em ordem inversa. Os
+            resultados do array original, array em ordem crescente e em
+            ordem decrescente.</p>
+        </div>
+        <div class="botao">
+        <br>
+        <label for="numSel">Digite um valor para gerar o array:</label><br><br>
+        <input type="number" id="numSel" placeholder="Número"><br><br>
+        <button id="gerarSel">Gerar Selection</button><br><br>
+        <button id="ordenarCreSel">Ordenar Crescente</button><br><br>
+        <button id="ordenarDecreSel">Ordenar Decrescente</button><br><br>
+        <div id="resSel"></div>
+    <br>
+    <hr>
+    </div>
+</div>
+        <br><br>
+        <div class="caixa">
+            <h2>Vídeo</h2>
+            <div class="paragrafo">
+            <p>Elaborar 3 (três) vídeos explicativos, um para cada algoritmo:
+                Insertion Sort, Selection Sort e Bubble Sort. Cada vídeo deve
+                explicar como o algoritmo funciona, explicando com suas
+                palavras o passo a passo do algoritmo em funcionamento. Usar
+                o array [5, 3, 1, 4, 2] como referência para demonstrar a
+                explicação. O programa deve ser feito em HTML, CSS e
+                Javascript. O array pode ser inserido diretamente no programa.
+                Requisito: o programa deve apresentar o resultado na tela dos
+                passos usados para ordenar o algoritmo e deve possuir apenas 1
+                botão para iniciar a execução do programa (cada aluno vai
+                gravar um vídeo). O programa deve orientar o usuário do que o
+                programa faz. Usar os métodos ‘createElement’ e ‘setAttribute’,
+                ‘appendChild’, ‘querySelector’ e utilizar arrow function.</p>
+            </div>
+            <br>
+            <div class="botao">
+            <button id="ordenar">Ordenar</button><br><br>
+            <div id="res"></div>
+    <br>
+        <p><span>Exemplo uso dos métodos ‘createElement’ e ‘appendChild’:</span></p>
+    </div>
+    <br>
+    <div class="imagem">
+        <img src="append_create.png" alt="">
+    </div>
+    <hr>
+    </div>
+</div>
+    <br><br>
+    <div class="caixa2">
+        <h2>Exercícios em JS</h2>
         <br>
         <div class="botao">
-        <button onclick="media()">Fazer</button>
+        <button onclick="location.href='Js.html'">JS-EXS</button>
     </div>
-        <br>
-        <div id="res"></div>
-        <br>
-        <hr>
-        <br>
-        <h2>Exercício 2</h2>
-        <br>
-        <p>Crie um programa que percorra um array de 10 números e calcule a soma de
-            todos os números divisíveis por 5, utilizando um laço do...while, considerando o
-            seguinte array: [5, 10, 14, 25, 30, 7, 3, 50, 9, 45].</p>
-        <br>
-        <div class="botao">
-        <button onclick="media3()">Fazer3</button>
-    </div>
-        <br>
-        <div id="res2"></div>
-        <br>
-        <hr>
-        <br>
-        <h2>Exercício 3</h2>
-        <br>
-        <p>Crie um programa que percorra um array de 10 números e calcule a soma de
-            todos os números divisíveis por 3, utilizando um laço while, considerando o
-            seguinte array: [9, 14, 21, 33, 18, 20, 27, 10, 12, 16].</p>
-        <br>
-        <div class="botao">
-        <button onclick="media6()">Fazer6</button>
-    </div>
-        <br>
-        <div id="res3"></div>
-        <br>
-        <hr>
     </div>
     <br>
     <hr>

@@ -7,8 +7,8 @@
 }
 body{
     background-color: rgb(163, 163, 163);
-    color: rgb(255, 159, 223);
-    font-size: 1.3rem;
+    color: rgb(255, 201, 237);
+    font-size: 18px;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -16,15 +16,35 @@ body{
     font-size: 15px;
 }
 button{
-    background-color: rgb(206, 88, 221);
-    color: black;
-    font-size: 1.1rem;
-    border-radius: 12px;
+    width: 30%;
     height: 30px;
-    padding-left: 6px;
-    padding-right: 6px;
+    border: none;
+    background-color: rgb(224, 116, 238);
+    color: white;
+    border: 2px dashed white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
 }
 .botao{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 30%;
+    padding: 5px;
+    height: fit-content;
+    margin: 10px 0;
+    border: 3px solid rgb(255, 201, 237);
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(224, 116, 238);
+    background-color: rgba(53, 57, 61, 0.315);
+    box-shadow: 0 0 25px 5px #00000044;
+}
+:placeholder-shown{
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -85,11 +105,16 @@ ul li.itemMenu a{
 }
 h1, h2{    
     font-weight: bold;
-    font-size: 32px;
+    font-size: 36px;
     color:  rgb(236, 133, 219);
     justify-content: center;
     text-align: center;
     align-items: center;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+    color:  rgb(236, 133, 219);
 }
 span{
     font-weight: bold;
@@ -113,7 +138,7 @@ nav.menuLat.expandir{
     padding-left: 16px;
     margin: 0 auto;
     border-radius: 50px;
-    border: rgb(236, 133, 219) 4px dashed;
+    border: rgb(236, 133, 219) 4px solid;
     box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
@@ -129,7 +154,7 @@ nav.menuLat.expandir{
     padding-left: 16px;
     margin: 0 auto;
     border-radius: 50px;
-    border: rgb(236, 133, 219) 4px dashed;
+    border: rgb(245, 154, 230) 4px dashed;
     box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
@@ -190,24 +215,48 @@ img:hover{
     width: 350px;
     transition: 1.5s;
 }
-.imagem_centralizer{
+.imagem{
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#resposta{
+#resBub{
     color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#resposta2{
+#resIns{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#resSel{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#respostaPilha{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#respostaFila{
     color: white;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 #res{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#res1{
     color: white;
     align-items: center;
     justify-content: center;
@@ -225,7 +274,18 @@ img:hover{
     justify-content: center;
     text-align: center;
 }
+#respostaMats{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 footer small{
     font-size: medium;
     color: white;
+}
+.paragrafo{
+    justify-content: center;
+    text-align: justify;
+    align-items: justify;
 }

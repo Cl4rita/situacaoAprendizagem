@@ -1,9 +1,9 @@
-let res = document.getElementById('res')
+let res1 = document.getElementById('res1')
 let array1 = [15, 25, 35, 45, 55]
 let contador = 5
 
 function media(){
-    res.innerHTML = `Array = ${array1} <br>`
+    res1.innerHTML = `Array = ${array1} <br>`
     let soma1 = 0, media1 = 0
 
     do{
@@ -14,8 +14,8 @@ function media(){
     }while(contador > 0)
     media1 = soma1 / array1.length
     console.log(media1)
-    res.innerHTML += `Soma = ${soma1} <br>`
-    res.innerHTML += `Contador = ${soma1}`
+    res1.innerHTML += `Soma = ${soma1} <br>`
+    res1.innerHTML += `Contador = ${soma1}`
 }
 
 let res2 = document.getElementById('res2')
