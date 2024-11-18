@@ -90,14 +90,18 @@ criarMat1.addEventListener('click', ()=>{
     respostaMats.innerHTML = "1ª Matriz gerada: <br>["
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            respostaMats.innerHTML += matriz1[i][j] + ",  "
-        }
-        if(i<4){
-
-            respostaMats.innerHTML += "<br>"
+            respostaMats.innerHTML += matriz1[i][j]
+            if(j != 4){
+                respostaMats.innerHTML += ", "
+            }
+            if(j==4 && i==4){
+                respostaMats.innerHTML += " ]"
+            }else if(j==4){
+                respostaMats.innerHTML += "<br>"
+            }
         }
     }
-    respostaMats.innerHTML += "] <br>"
+    respostaMats.innerHTML += "<br>" + "<br>"
 })
 criarMat2.addEventListener('click', ()=>{
     for(let i=0; i<5; i++){
@@ -112,14 +116,18 @@ criarMat2.addEventListener('click', ()=>{
     respostaMats.innerHTML += "2ª Matriz gerada: <br>["
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            respostaMats.innerHTML += matriz2[i][j] + ",  "
-        }
-        if(i<4){
-
-            respostaMats.innerHTML += "<br>"
+            respostaMats.innerHTML += matriz1[i][j]
+            if(j != 4){
+                respostaMats.innerHTML += ", "
+            }
+            if(j==4 && i==4){
+                respostaMats.innerHTML += " ]"
+            }else if(j==4){
+                respostaMats.innerHTML += "<br>"
+            }
         }
     }
-    respostaMats.innerHTML += "] <br>"
+    respostaMats.innerHTML += "<br>" + "<br>"
 })
 
 somarMats.addEventListener('click', ()=>{
@@ -131,12 +139,15 @@ somarMats.addEventListener('click', ()=>{
     respostaMats.innerHTML += "A soma das matrizes é: <br> ["
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            respostaMats.innerHTML += matsSomada[i][j] + ", "
-        }
-        if(i<4){
-
-            respostaMats.innerHTML += "<br>"
+            respostaMats.innerHTML += matriz1[i][j]
+            if(j != 4){
+                respostaMats.innerHTML += ", "
+            }
+            if(j==4 && i==4){
+                respostaMats.innerHTML += " ]"
+            }else if(j==4){
+                respostaMats.innerHTML += "<br>"
+            }
         }
     }
-    respostaMats.innerHTML += "]"
 })

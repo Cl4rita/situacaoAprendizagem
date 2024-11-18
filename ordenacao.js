@@ -209,3 +209,54 @@ ordenar.addEventListener(`click`, ()=>{
     ordenarCre()
     ordenarDecre()
 })
+let respostaProva = document.getElementById('respostaProva')
+let arrayq3 = [0, 0, 0, 0, 0, 0, 0]
+let auxProva  = 0
+
+function gerarAleatorioProva(max,min){
+    let valorAleatorioProva = Math.floor(Math.random() * (max - min + 1) + min)
+    return valorAleatorioProva
+}
+function gerarArrayProva(){
+    for(i=0; i < arrayq3.length; i++){
+        arrayq3[i]=gerarAleatorioProva(15,1)
+    }
+    respostaProva.innerHTML = `Array gerado ${arrayq3} <br>`
+}
+function ordenarProva(){
+    for(j=arrayq3.length-1;j>0;j--){
+        for(i=0;i<arrayq3.length-1;i++){
+            if(arrayq3[i]>arrayq3[i+1]){
+                auxProva = arrayq3[i]
+                arrayq3[i]=arrayq3[i+1]
+                arrayq3[i+1]=auxProva
+            }
+        }    
+    }
+    respostaProva.innerHTML += `Array crescente ${arrayq3}`
+}
+let respostaProva4 = document.getElementById('respostaProva4')
+let arrayq4 = [0, 0, 0, 0, 0, 0, 0]
+let auxProva4  = 0
+
+function gerarAleatorioProva4(max,min){
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+function gerarArrayProva4(){
+    for(i=0; i < arrayq4.length; i++){
+        arrayq4[i]=gerarAleatorioProva4(15,1)
+    }
+    respostaProva4.innerHTML = `Array gerado ${arrayq4} <br>`
+}
+function ordenarProva4(){
+    for(j=arrayq4.length-1;j>0;j--){
+        for(i=0;i<arrayq4.length-1;i++){
+            if(arrayq4[i]<arrayq4[i+1]){
+                auxProva4 = arrayq4[i]
+                arrayq4[i]=arrayq4[i+1]
+                arrayq4[i+1]=auxProva4
+            }
+        }    
+    }
+    respostaProva4.innerHTML += `Array decrescente ${arrayq4}`
+}

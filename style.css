@@ -6,10 +6,10 @@
     font-weight: lighter;
 }
 body{
-    background-color: rgb(163, 163, 163);
+    background-color: gray;
     color: rgb(255, 201, 237);
     font-size: 18px;
-    height: 100vh;
+    height: 80vw;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -132,7 +132,7 @@ nav.menuLat.expandir{
     text-align: justify;
     align-items: center;
     width: 70%;
-    background: rgb(75, 75, 75);
+    background: rgb(59, 34, 66);
     height: auto;
     padding: 25px 25px;
     padding-left: 16px;
@@ -148,24 +148,95 @@ nav.menuLat.expandir{
     text-align: justify;
     align-items: center;
     width: 70%;
-    background: rgb(75, 75, 75);
+    background: rgb(59, 34, 66);
     height: auto;
     padding: 25px 25px;
     padding-left: 16px;
     margin: 0 auto;
     border-radius: 50px;
-    border: rgb(245, 154, 230) 4px dashed;
+    border: rgb(236, 133, 219) 4px dashed;
     box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
 }
+.caixa3{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    background: rgb(59, 34, 66);
+    height: auto;
+    padding: 30px; 
+    border-radius: 50px;
+    border: rgb(236, 133, 219) 4px dashed;
+    box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    float:left;
+    margin: 0 30px 0 0;
+}
+.caixa4{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    background: rgb(59, 34, 66);
+    height: auto;
+    padding: 25px 25px;
+    padding-left: 16px;
+    border-radius: 50px;
+    border: rgb(236, 133, 219) 4px dashed;
+    box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    float:left;
+    margin: 0 30px 0 0;
+}
+
+.caixa5{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    background: rgb(59, 34, 66);
+    height: auto;
+    padding: 25px 25px;
+    padding-left: 16px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: rgb(236, 133, 219) 4px dashed;
+    box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    float:left;
+    margin-right:30px;
+}
+.caixa6{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30vw;
+    background: rgb(59, 34, 66);
+    height: auto;
+    padding: 25px 25px;
+    padding-left: 16px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: rgb(236, 133, 219) 4px solid;
+    box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    float:left;
+    margin-right:30px;
+}
+
 .btnIcones {
     display: flex;
     text-align: justify;
 }
 #itemMenu-vercel:hover {
     transition: 2s;
-    #txtPag3 {
+    #txtPag3{
         display: block;
     }
 }
@@ -280,6 +351,18 @@ img:hover{
     justify-content: center;
     text-align: center;
 }
+#respostaProva{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#respostaProva4{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 footer small{
     font-size: medium;
     color: white;
@@ -288,4 +371,34 @@ footer small{
     justify-content: center;
     text-align: justify;
     align-items: justify;
+}
+#caixa4_centralizer-first{
+    height:200px;
+    width:80vw;
+    margin: 0 0 0 10vw;
+    margin-left: 18vw;
+}
+#caixa4_centralizer-second{
+    height:200px;
+    width:80vw;
+    margin-left:18vw;
+}
+#caixa4_centralizer-third{
+    height: 150px;
+    width: 40vw;
+    margin-left: 30vw;
+}
+#caixa6_organizer{
+    height:210px;
+    width:62vw;
+    margin:-2px 0 0 -2px;
+}
+#div-mapa{
+    margin-top:30px;
+    margin-right: 245px;
+    float:right;
+    margin-left:20vw;
+}
+iframe{
+    border-radius: 20px;
 }
