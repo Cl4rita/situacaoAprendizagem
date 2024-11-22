@@ -8,10 +8,9 @@
 body{
     background-color: gray;
     color: rgb(255, 201, 237);
-    font-size: 18px;
     height: 80vw;
-    justify-content: center;
-    align-items: center;
+    justify-content: justify;
+    align-items: justify;
     text-align: center;
     font-size: 15px;
 }
@@ -103,7 +102,7 @@ ul li.itemMenu a{
     line-height: 20px;
     margin-left: 12px;
 }
-h1, h2{    
+h1, h2, span{    
     font-weight: bold;
     font-size: 36px;
     color:  rgb(236, 133, 219);
@@ -131,7 +130,7 @@ nav.menuLat.expandir{
     justify-content: center;
     text-align: justify;
     align-items: center;
-    width: 70%;
+    width: 70vw;
     background: rgb(59, 34, 66);
     height: auto;
     padding: 25px 25px;
@@ -147,7 +146,7 @@ nav.menuLat.expandir{
     justify-content: center;
     text-align: justify;
     align-items: center;
-    width: 70%;
+    width: 70vw;
     background: rgb(59, 34, 66);
     height: auto;
     padding: 25px 25px;
@@ -163,7 +162,7 @@ nav.menuLat.expandir{
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 70%;
+    width: 70vw;
     background: rgb(59, 34, 66);
     height: auto;
     padding: 30px; 
@@ -228,6 +227,22 @@ nav.menuLat.expandir{
     backdrop-filter: blur(25px);
     float:left;
     margin-right:30px;
+}
+.caixa7{
+    justify-content: flex-start;
+    text-align: flex-start;
+    align-items: flex-start;
+    width: 10vw;
+    background: rgb(59, 34, 66);
+    height: auto;
+    padding: 15px 15px;
+    padding-left: 16px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: rgb(236, 133, 219) 4px solid;
+    box-shadow: 0 4px 30px rgba(59, 100, 21, 0.1);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
 }
 
 .btnIcones {
@@ -372,6 +387,11 @@ footer small{
     text-align: justify;
     align-items: justify;
 }
+.paragrafo{
+    justify-content: center;
+    text-align: justify;
+    align-items: justify;
+}
 #caixa4_centralizer-first{
     height:200px;
     width:80vw;
@@ -386,19 +406,134 @@ footer small{
 #caixa4_centralizer-third{
     height: 150px;
     width: 40vw;
-    margin-left: 30vw;
-}
-#caixa6_organizer{
-    height:210px;
-    width:62vw;
-    margin:-2px 0 0 -2px;
-}
-#div-mapa{
-    margin-top:30px;
-    margin-right: 245px;
-    float:right;
-    margin-left:20vw;
+    margin-left: 29vw;
 }
 iframe{
     border-radius: 20px;
+}
+.video{
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+.caixa7-container {
+    display: flex;
+}
+.caixa7 {
+    flex: 1;
+    max-width: calc(25% - 10px);
+}
+.caixa7 .imagem img{
+    max-width: 100%;
+    height: auto;
+}
+.escrita{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.map_centralizer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@media screen and (max-width: 1024px){
+    body{
+        font-size: 16px;
+    }
+    .caixa, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7{
+        width: 80%;
+        margin: 20px auto;
+        float: none;
+    }
+    #caixa4_centralizer-first,
+    #caixa4_centralizer-second,
+    #caixa4_centralizer-third{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #caixa6_organizer{
+        width: 90%;
+        height: auto;
+    }
+    #div-mapa{
+        float: none;
+        margin: 30px auto;
+        text-align: center;
+    }
+    iframe{
+        width: 80%;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+    h1, h2{
+        font-size: 28px;
+    }
+    .caixa, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7{
+        width: 90%;
+        padding: 15px;
+    }
+    button, input{
+        width: 80%;
+    }
+    nav.menuLat{
+        width: 50px;
+    }
+    nav.menuLat.expandir{
+        width: 200px;
+    }
+    ul li.itemMenu a{
+        font-size: 16px;
+    }
+    img{
+        width: 150px;
+    }
+    img:hover{
+        width: 200px;
+    }
+    #caixa4_centralizer-first,
+    #caixa4_centralizer-second,
+    #caixa4_centralizer-third{
+        width: 95%;
+        margin-left: 2.5%;
+        height: auto;
+    }
+    iframe{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 480px){
+    body{
+        font-size: 12px;
+    }
+    h1, h2{
+        font-size: 24px;
+    }
+    .caixa, .caixa2, .caixa3, .caixa4, .caixa5, .caixa6, .caixa7{
+        width: 95%;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    button, input{
+        width: 90%;
+    }
+    nav.menuLat{
+        width: 40px;
+    }
+    nav.menuLat.expandir{
+        width: 180px;
+    }
+    ul li.itemMenu a{
+        font-size: 14px;
+    }
+    img{
+        width: 120px;
+    }
+    img:hover{
+        width: 160px;
+    }
 }
