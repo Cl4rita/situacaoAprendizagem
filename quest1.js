@@ -4,7 +4,7 @@ let i = 0
 let contador3 = 0
 
 function media3(){
-    res2.innerHTML = `Array = ${array3} <br>`
+    res2.innerHTML = `Array = [${array3}] <br>`
     let media2 = 0, soma3 = 0
 
     do{
@@ -28,7 +28,7 @@ let j = 0
 let contador6 = 0
 
 function media6(){
-    res3.innerHTML = `Array = ${array6} <br>`
+    res3.innerHTML = `Array = [${array6}] <br>`
     let soma6 = 0
 
     while(j < array6.length){

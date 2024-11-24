@@ -14,7 +14,7 @@ gerarBub.addEventListener('click', ()=>{
     }
     console.table(numArrayBub)
 
-    resBub.innerHTML = `Array gerado ${numArrayBub} <br>`
+    resBub.innerHTML = `Array gerado [${numArrayBub}] <br>`
 })
 
 function gerarAleatorioBub(max,min){
@@ -69,7 +69,7 @@ gerarIns.addEventListener('click', ()=>{
     }
     console.table(numArrayIns)
 
-    resIns.innerHTML = `Array gerado: ${numArrayIns} <br>`
+    resIns.innerHTML = `Array gerado: [${numArrayIns}] <br>`
 })
 function gerarAleatorioIns(max, min) {
     let valorIns = Math.floor(Math.random() * (max - min + 1) + min)
@@ -122,7 +122,7 @@ gerarSel.addEventListener('click', ()=>{
     }
     console.table(numArraySel)
 
-    resSel.innerHTML = `Array gerado: ${numArraySel} <br>`
+    resSel.innerHTML = `Array gerado: [${numArraySel}] <br>`
 })
 function gerarAleatorioSel(max, min) {
     let valorSel = Math.floor(Math.random() * (max - min + 1) + min)
@@ -221,7 +221,7 @@ function gerarArrayProva(){
     for(i=0; i < arrayq3.length; i++){
         arrayq3[i]=gerarAleatorioProva(15,1)
     }
-    respostaProva.innerHTML = `Array gerado ${arrayq3} <br>`
+    respostaProva.innerHTML = `Array gerado [${arrayq3}] <br>`
 }
 function ordenarProva(){
     for(j=arrayq3.length-1;j>0;j--){
@@ -233,7 +233,7 @@ function ordenarProva(){
             }
         }    
     }
-    respostaProva.innerHTML += `Array crescente ${arrayq3}`
+    respostaProva.innerHTML += `Array crescente [${arrayq3}]`
 }
 let respostaProva4 = document.getElementById('respostaProva4')
 let arrayq4 = [0, 0, 0, 0, 0, 0, 0]
@@ -246,7 +246,7 @@ function gerarArrayProva4(){
     for(i=0; i < arrayq4.length; i++){
         arrayq4[i]=gerarAleatorioProva4(15,1)
     }
-    respostaProva4.innerHTML = `Array gerado ${arrayq4} <br>`
+    respostaProva4.innerHTML = `Array gerado [${arrayq4}] <br>`
 }
 function ordenarProva4(){
     for(j=arrayq4.length-1;j>0;j--){
@@ -258,5 +258,5 @@ function ordenarProva4(){
             }
         }    
     }
-    respostaProva4.innerHTML += `Array decrescente ${arrayq4}`
+    respostaProva4.innerHTML += `Array decrescente [${arrayq4}]`
 }
