@@ -280,7 +280,7 @@ nav.menuLat.expandir{
     margin-left: 24px;
 }
 img{
-    width: 200px;
+    width: 30%;
     border: 2px;
     align-items: center;
     transition: 1s;
@@ -298,7 +298,7 @@ img{
     
 }
 img:hover{
-    width: 350px;
+    width: 70%;
     transition: 1.5s;
 }
 .imagem{
