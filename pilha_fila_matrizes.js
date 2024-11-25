@@ -65,15 +65,15 @@ let matriz2 = [[0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0]]
 
 let matsSomada = [[0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0]]
+                 [0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0],
+                 [0, 0, 0, 0, 0]]
 
 function gerarAle(max, min){
 let alea = Math.floor(Math.random() * (max - min + 1) ) + min
 return alea
-            }
+}
 
 criarMat1.addEventListener('click', ()=>{
     for(let i=0; i<5; i++){
@@ -116,7 +116,7 @@ criarMat2.addEventListener('click', ()=>{
     respostaMats.innerHTML += "2ª Matriz gerada: <br>["
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            respostaMats.innerHTML += matriz1[i][j]
+            respostaMats.innerHTML += matriz2[i][j]
             if(j != 4){
                 respostaMats.innerHTML += ", "
             }
@@ -139,7 +139,7 @@ somarMats.addEventListener('click', ()=>{
     respostaMats.innerHTML += "A soma das matrizes é: <br> ["
     for(i=0; i<5; i++){
         for(j=0; j<5; j++){
-            respostaMats.innerHTML += matriz1[i][j]
+            respostaMats.innerHTML += matsSomada[i][j]
             if(j != 4){
                 respostaMats.innerHTML += ", "
             }
